@@ -7,5 +7,14 @@ Detail {{ job.id }}
 {% load static %}
 
 {% block content %}
-{{ job.summary }}
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Job Detail</h1>
+      <p class="lead text-muted">{{ job.summary }}</p>
+      <img src="{% static 'avatar.jpg' %}" height=300>
+      <p>
+        <a href="{% url 'home' %}" class="btn btn-primary my-2">Back</a>
+      </p>
+    </div>
+  </section>
 {% endblock %}
