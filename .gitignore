@@ -159,5 +159,8 @@ portfolio/portfolio/notes/
 # Images
 portfolio/images/
 
+# Static files
+portfolio/static/
+
 # Local Database
 db.sqlite3
