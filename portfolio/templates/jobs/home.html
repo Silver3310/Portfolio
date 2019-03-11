@@ -4,6 +4,8 @@
 Home page
 {% endblock %}
 
+{% load static %}
+
 {% block content %}
 
   <section class="jumbotron text-center">
@@ -13,6 +15,7 @@ Home page
       <p>
         <a href="mailto:epifanov998@mail.ru" class="btn btn-primary my-2">Email Me</a>
       </p>
+      <img src="{% static 'avatar.jpg' %}" height=300>
     </div>
   </section>
 

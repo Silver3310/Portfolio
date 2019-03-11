@@ -161,6 +161,7 @@ portfolio/images/
 
 # Static files
 portfolio/static/
+portfolio/jobs/static/
 
 # Local Database
 db.sqlite3
