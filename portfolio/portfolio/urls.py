@@ -18,12 +18,18 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 from .settings.security.safe_urls import admin_url
 
 urlpatterns = [
     path(admin_url, admin.site.urls),
     path('', include('jobs.urls'))
-] + static(
+]
+urlpatterns += static(
     settings.STATIC_URL,
     document_root=settings.STATIC_ROOT
+)
+urlpatterns += static(
+    settings.MEDIA_URL,
+    document_root=settings.MEDIA_ROOT
 )
