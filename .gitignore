@@ -156,5 +156,8 @@ portfolio/portfolio/settings/security/
 # Personal notes
 portfolio/portfolio/notes/
 
+# Images
+portfolio/images/
+
 # Local Database
 db.sqlite3
